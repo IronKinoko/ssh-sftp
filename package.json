@@ -1,13 +1,19 @@
 {
   "name": "ssh-sftp",
   "version": "1.0.0",
-  "description": "",
+  "description": "SFPT Client, config once, use anytime.",
   "main": "lib/index.js",
   "scripts": {
     "test": "ssh-sftp"
   },
   "bin": "./bin/ssh-sftp.js",
-  "keywords": [],
+  "keywords": [
+    "sftp"
+  ],
+  "files": [
+    "lib",
+    "bin"
+  ],
   "author": "kinoko",
   "license": "MIT",
   "dependencies": {
