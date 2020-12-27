@@ -8,21 +8,11 @@ SFPT Client, config once, use anytime.
 
 ## Usage
 
-Add `.sftprc.json` to root path. The ignore option is optional.
+Run the command to init ssh-sftp config file
 
-```json
-{
-  "localPath": "",
-  "remotePath": "",
-  "connectOptions": {
-    "host": "127.0.0.1",
-    "port": 2222,
-    "username": "foo",
-    "password": "pass"
-  },
-  "ignore": ["**/b.txt", "**/file{2..30}.txt"]
-}
-```
+`npx ssh-sftp init`
+
+See the `.sftprc.json`, config the json.
 
 Add script to `package.json`
 
