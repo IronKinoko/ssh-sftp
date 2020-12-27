@@ -8,7 +8,7 @@ require('yargs')
   .command('*', 'upload files', {}, upload)
   .command(
     'init',
-    'generate ssh-sftop config file .sftprc.json',
+    'generate ssh-sftp config file .sftprc.json',
     {},
     generateDefaultConfigJSON
   )
