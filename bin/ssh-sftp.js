@@ -55,5 +55,5 @@ function generateDefaultConfigJSON() {
     ),
     { encoding: 'utf-8' }
   )
-  ora().succeed('genenrated .sftprc.json file in the root path')
+  ora().succeed('The .sftprc.json file has been generated in the root path')
 }
