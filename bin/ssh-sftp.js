@@ -49,6 +49,7 @@ function generateDefaultConfigJSON() {
           password: '',
         },
         ignore: ['**/something[optional].js'],
+        cleanRemoteFiles: false,
       },
       null,
       2

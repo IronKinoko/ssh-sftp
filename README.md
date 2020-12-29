@@ -23,3 +23,24 @@ Add script to `package.json`
   }
 }
 ```
+
+## `.sftprc.json`
+
+`.sftprc.json`
+
+| name             | type                 | desc                                             |
+| ---------------- | -------------------- | ------------------------------------------------ |
+| localPath        | `string`             |                                                  |
+| remotePath       | `string`             |                                                  |
+| connectOptions   | `Object`             | sftp server connect config                       |
+| ignore           | `string[]`           | `glob` pattern string                            |
+| cleanRemoteFiles | `boolean | string[]` | `glob` pattern remove remote files before upload |
+
+`connectOptions`
+
+| name     | type     | desc |
+| -------- | -------- | ---- |
+| host     | `string` |      |
+| port     | `number` |      |
+| username | `string` |      |
+| password | `string` |      |
