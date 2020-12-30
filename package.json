@@ -16,8 +16,12 @@
     "lib",
     "bin"
   ],
-  "author": "kinoko",
+  "author": "kinoko <kinoko_main@outlook.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IronKinoko/ssh-sftp.git"
+  },
   "dependencies": {
     "glob": "^7.1.6",
     "minimatch": "^3.0.4",
