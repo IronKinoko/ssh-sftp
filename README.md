@@ -34,7 +34,7 @@ Add script to `package.json`
 | remotePath       | `string`             |                                                  |
 | connectOptions   | `Object`             | sftp server connect config                       |
 | ignore           | `string[]`           | `glob` pattern string                            |
-| cleanRemoteFiles | `boolean | string[]` | `glob` pattern remove remote files before upload |
+| cleanRemoteFiles | `boolean \| string[]` | `glob` pattern remove remote files before upload |
 
 `connectOptions`
 
