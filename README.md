@@ -25,7 +25,7 @@ Add script to `package.json`
 }
 ```
 
-**You can run `npx ssh-sftp ls` to see which fiels will be upload**
+**You can run `npx ssh-sftp ls` to see which files will be upload**
 
 ## `.sftprc.json`
 
