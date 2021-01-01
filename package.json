@@ -4,7 +4,8 @@
   "description": "SFPT Client, config once, use anytime.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "ssh-sftp"
+    "test": "ssh-sftp",
+    "test:ls": "ssh-sftp ls"
   },
   "bin": {
     "ssh-sftp": "bin/ssh-sftp.js"
@@ -14,7 +15,8 @@
   ],
   "files": [
     "lib",
-    "bin"
+    "bin",
+    "example"
   ],
   "author": "kinoko <kinoko_main@outlook.com>",
   "license": "MIT",
