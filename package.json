@@ -4,8 +4,8 @@
   "description": "SFPT Client, config once, use anytime.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "ssh-sftp",
-    "test:ls": "ssh-sftp ls"
+    "test": "node bin/ssh-sftp.js",
+    "test:ls": "node bin/ssh-sftp.js ls"
   },
   "bin": {
     "ssh-sftp": "bin/ssh-sftp.js"

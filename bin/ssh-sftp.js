@@ -18,7 +18,8 @@ require('yargs')
     (yargs) =>
       yargs
         .option('u', { desc: 'ls upload files' })
-        .option('d', { desc: 'ls delete files' }),
+        .option('d', { desc: 'ls delete files' })
+        .option('i', { desc: 'ls ignore files' }),
     ls
   )
   .alias({ v: 'version', h: 'help' }).argv
@@ -75,9 +76,11 @@ function ls(argv) {
   }
   const opts = fs.readFileSync('.sftprc.json', { encoding: 'utf-8' })
 
-  if (!argv.u && !argv.d) {
+
+  if (!argv.u && !argv.d && !argv.i) {
     argv.u = true
     argv.d = true
+    argv.i = true
   }
   sshSftpLS(JSON.parse(opts), argv)
 }

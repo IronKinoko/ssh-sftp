@@ -61,3 +61,5 @@ Default ls all upload/delete files.
 `ssh-sftp ls -u` ls all upload files.
 
 `ssh-sftp ls -d` ls all delete files.
+
+`ssh-sftp ls -i` ls all ignore files.
