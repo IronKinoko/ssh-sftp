@@ -26,7 +26,8 @@ require('yargs')
 
 function isRoot() {
   if (!fs.existsSync('package.json')) {
-    throw new Error('please run in root path')
+    ora().fail('please run in the root path')
+    process.exit(1)
   }
 }
 
@@ -35,7 +36,7 @@ function upload() {
   if (!fs.existsSync('.sftprc.json')) {
     return ora().fail('no .sftprc.joson file in the root path')
   }
-  const opts = fs.readFileSync('.sftprc.json', { encoding: 'utf-8' })
+  const opts = fs.readFileSync('.sftprc.json', 'utf-8')
 
   sshSftp(JSON.parse(opts))
 }
@@ -74,8 +75,7 @@ function ls(argv) {
   if (!fs.existsSync('.sftprc.json')) {
     return ora().fail('no .sftprc.joson file in the root path')
   }
-  const opts = fs.readFileSync('.sftprc.json', { encoding: 'utf-8' })
-
+  const opts = fs.readFileSync('.sftprc.json', 'utf-8')
 
   if (!argv.u && !argv.d && !argv.i) {
     argv.u = true

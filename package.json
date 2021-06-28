@@ -4,8 +4,7 @@
   "description": "SFPT Client, config once, use anytime.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node bin/ssh-sftp.js",
-    "test:ls": "node bin/ssh-sftp.js ls"
+    "test": "node bin/ssh-sftp.js"
   },
   "bin": {
     "ssh-sftp": "bin/ssh-sftp.js"
@@ -26,6 +25,7 @@
   },
   "dependencies": {
     "glob": "^7.1.6",
+    "inquirer": "^8.1.1",
     "minimatch": "^3.0.4",
     "ora": "^5.1.0",
     "ssh2-sftp-client": "^6.0.0",
