@@ -1,6 +1,6 @@
 {
   "name": "ssh-sftp",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "SFPT Client, config once, use anytime.",
   "main": "lib/index.js",
   "scripts": {
