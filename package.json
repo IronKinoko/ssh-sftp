@@ -24,6 +24,7 @@
     "url": "https://github.com/IronKinoko/ssh-sftp.git"
   },
   "dependencies": {
+    "chalk": "^4.1.1",
     "glob": "^7.1.6",
     "inquirer": "^8.1.1",
     "minimatch": "^3.0.4",
