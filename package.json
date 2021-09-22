@@ -26,6 +26,7 @@
     "minimatch": "^3.0.4",
     "ora": "^5.1.0",
     "ssh2-sftp-client": "^6.0.0",
+    "update-notifier": "^5.1.0",
     "yargs": "^16.2.0"
   }
 }
