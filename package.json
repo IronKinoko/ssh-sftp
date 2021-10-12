@@ -17,6 +17,9 @@
     "bin",
     "example"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "author": "kinoko <kinoko_main@outlook.com>",
   "license": "MIT",
   "dependencies": {
