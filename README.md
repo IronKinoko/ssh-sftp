@@ -45,6 +45,7 @@ npm i ssh-sftp -D
 | ignore           | `string[]`            | 忽略`localPath`中的部分文件，`glob`类型        |
 | cleanRemoteFiles | `boolean \| string[]` | 清空远程文件夹，或按`glob`匹配清空远程部分文件 |
 | securityLock     | `boolean`             | 安全锁，默认开启                               |
+| keepAlive        | `boolean`             | 保持连接                                       |
 
 ### `connectOptions`
 
