@@ -1,6 +1,6 @@
 {
   "name": "ssh-sftp",
-  "version": "1.10.2",
+  "version": "1.10.3",
   "description": "SFPT Client, config once, use anytime.",
   "main": "lib/index.js",
   "scripts": {
@@ -15,7 +15,8 @@
   "files": [
     "lib",
     "bin",
-    "example"
+    "example",
+    ".sftprc.schema.json"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

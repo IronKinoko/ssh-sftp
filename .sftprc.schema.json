@@ -1,0 +1,131 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "description": "ssh-sftp 配置项",
+  "default": {},
+  "examples": [
+    {
+      "localPath": "/path/to/localDir",
+      "remotePath": "/path/to/remoteDir",
+      "connectOptions": {
+        "host": "127.0.0.1",
+        "port": 22,
+        "username": "",
+        "password": ""
+      },
+      "ignore": ["**/something[optional].js"],
+      "cleanRemoteFiles": false,
+      "securityLock": true,
+      "keepAlive": false,
+      "noWarn": false
+    }
+  ],
+  "required": ["localPath", "remotePath", "connectOptions"],
+  "properties": {
+    "localPath": {
+      "$id": "#/properties/localPath",
+      "type": "string",
+      "description": "本地 dist 地址",
+      "default": "",
+      "examples": ["/path/to/localDir"]
+    },
+    "remotePath": {
+      "$id": "#/properties/remotePath",
+      "type": "string",
+      "description": "远程 dist 部署地址",
+      "default": "",
+      "examples": ["/path/to/remoteDir"]
+    },
+    "connectOptions": {
+      "$id": "#/properties/connectOptions",
+      "type": "object",
+      "description": "服务器连接信息",
+      "default": {},
+      "examples": [
+        {
+          "host": "127.0.0.1",
+          "port": 22,
+          "username": "",
+          "password": ""
+        }
+      ],
+      "required": ["host", "port", "username", "password"],
+      "properties": {
+        "host": {
+          "$id": "#/properties/connectOptions/properties/host",
+          "type": "string",
+          "description": "主机",
+          "default": "",
+          "examples": ["127.0.0.1"]
+        },
+        "port": {
+          "$id": "#/properties/connectOptions/properties/port",
+          "type": "integer",
+          "description": "端口号",
+          "default": 0,
+          "examples": [22]
+        },
+        "username": {
+          "$id": "#/properties/connectOptions/properties/username",
+          "type": "string",
+          "description": "用户名",
+          "default": "",
+          "examples": [""]
+        },
+        "password": {
+          "$id": "#/properties/connectOptions/properties/password",
+          "type": "string",
+          "description": "密码",
+          "default": "",
+          "examples": [""]
+        }
+      },
+      "additionalProperties": true
+    },
+    "ignore": {
+      "$id": "#/properties/ignore",
+      "type": "array",
+      "description": "忽略上传某些文件",
+      "default": [],
+      "examples": [["**/something[optional].js"]],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/ignore/items",
+        "type": "string"
+      }
+    },
+    "cleanRemoteFiles": {
+      "$id": "#/properties/cleanRemoteFiles",
+      "type": ["boolean", "array"],
+      "description": "清空远程数据",
+      "default": false,
+      "examples": [false, ["**/something[optional].js"]],
+      "items": {
+        "$id": "#/properties/cleanRemoteFiles/items",
+        "type": "string"
+      }
+    },
+    "securityLock": {
+      "$id": "#/properties/securityLock",
+      "type": "boolean",
+      "description": "启用安全锁",
+      "default": true,
+      "examples": [true]
+    },
+    "keepAlive": {
+      "$id": "#/properties/keepAlive",
+      "type": "boolean",
+      "description": "上传完毕后保持与连接",
+      "default": false,
+      "examples": [false]
+    },
+    "noWarn": {
+      "$id": "#/properties/noWarn",
+      "type": "boolean",
+      "description": "禁用控制台提示",
+      "default": false,
+      "examples": [false]
+    }
+  },
+  "additionalProperties": true
+}
