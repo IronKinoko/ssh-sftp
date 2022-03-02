@@ -21,7 +21,7 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "author": "kinoko <kinoko_main@outlook.com>",
+  "author": "Ironkinoko <kinoko_main@outlook.com>",
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.1",
